@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>ADVICE #<span id="adviceID">117</span></h1>
+      <!-- Advice ID goes here -->
+      <p class="">
+        "<span id="adviceMsg"
+          >It is easy to sit up and take notice, what's difficult is getting up
+          and taking action.</span
+        >"
+      </p>
+      <!-- Advice text goes here -->
+      <img
+        src="./images/pattern-divider-mobile.svg"
+        alt="Pattern Divider"
+        id="mobileImg"
+      />
+      <img
+        src="./images//pattern-divider-desktop.svg"
+        alt="Patter Divider"
+        id="desktopImg"
+      />
+      <button class="btn" id="generateBtn">
+        <img src="./images/icon-dice.svg" alt="Dice Button" id="diceImg" />
+      </button>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

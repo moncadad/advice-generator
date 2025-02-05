@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+/* Layout widths: - Mobile: 375px, - Desktop: 1440px (320- larger*/
+
+/* ## Colors */
+/* Primary */
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /*Neutral */
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+
+  /* ## Typography */
+  /* Body Copy */
+  --Quote-font-size: 28px;
+  --Font-800: 800;
+
+  /*Font Family */
+  --Font-Manrope: "Manrope", serif;
+}
+/* - Family: [Manrope](https://fonts.google.com/specimen/Manrope) */
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-color: var(--Dark-Blue);
+  color: var(--Light-Cyan);
+  font-family: var(--Font-Manrope);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: var(--Dark-Grayish-Blue);
+  text-align: center;
+  width: 92%;
+  max-width: 33.75rem;
+  border-radius: 0.625rem;
+  margin: 0 1rem;
+  padding: 2.75rem 1.5rem;
+}
+h1 {
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  padding-bottom: 1.625rem;
+}
+
+p {
+  font-weight: var(--Font-800);
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#desktopImg {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  position: relative;
+  background-color: var(--Neon-Green);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 4em;
+  width: 4em;
+  margin-top: -2em;
+  top: 4.5rem;
+}
+button:hover,
+button:focus {
+  box-shadow: 0 0 1.5rem var(--Neon-Green);
+}
+
+@media screen and (min-width: 400px) {
+  #mobileImg {
+    display: none;
+  }
+  #desktopImg {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 950px) {
+  body {
+    /* background-color: red; */
+    display: flex;
+  }
+  .container {
+    border-radius: 1rem;
+    padding: 2.9rem;
+    font-size: var(--Quote-font-size);
+  }
+  h1 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+  p {
+    font-size: var(--Quote-font-size);
+  }
+}
